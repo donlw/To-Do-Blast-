@@ -3,7 +3,7 @@ TO-DO BLAST! — README
 TO-DO BLAST! is a funky, animated, single-page To-Do application built with plain HTML, CSS, and JavaScript.
 Perfect for learning DOM manipulation, localStorage, theme toggling and shipping a polished small project.
 
-Live demo : 
+Live demo : https://to-do-blast.netlify.app/
 
 Features : 
 
