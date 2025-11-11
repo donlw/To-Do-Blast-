@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>TO-DO BLAST!</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Comic+Neue:wght@700&family=Fredoka+One&family=Righteous&family=Bangers&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="background-effects" id="bgEffects"></div>
+
+    <div class="container">
+        <header>
+            <div class="header-controls">
+                <button class="control-btn" id="themeToggle" title="Toggle Dark Mode">
+                    <span class="light-icon">🌞</span>
+                    <span class="dark-icon" style="display:none">🌙</span>
+                </button>
+            </div>
+            <h1>Do It Now!</h1>
+            <p class="subtitle">Crush tasks • Ride the wave • Level up!</p>
+        </header>
+
+        <div class="main-content">
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number" id="totalTasks">0</div>
+                    <div class="stat-label">TOTAL</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="activeTasks">0</div>
+                    <div class="stat-label">PENDING</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="completedTasks">0</div>
+                    <div class="stat-label">CRUSHED</div>
+                </div>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="What's your next power move?">
+                <button id="addBtn">LAUNCH IT!</button>
+            </div>
+
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">ALL</button>
+                <button class="filter-btn" data-filter="active">ACTIVE</button>
+                <button class="filter-btn" data-filter="completed">DONE</button>
+            </div>
+
+            <ul class="task-list" id="taskList"></ul>
+
+            <div class="empty-state" id="emptyState">
+                <p>Whoa! Empty zone!</p>
+                <p>Add a task and let's make waves!</p>
+            </div>
+
+            <div class="clear-all" id="clearAllSection" style="display:none">
+                <button class="clear-btn" id="clearAllBtn">NUKE ALL TASKS</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
